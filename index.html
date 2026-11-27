@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3efe8">
+  <meta name="description" content="Um arquivo de fotografias e lembranças reunidas por Nickolas.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Banco de memórias — Nickolas">
+  <meta property="og:description" content="Pessoas, encontros e momentos que fizeram parte da minha caminhada.">
+  <title>Banco de memórias — Nickolas</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="wordmark" href="#inicio" aria-label="Banco de memórias, início">
+      <span class="wordmark-mark" aria-hidden="true">n.</span>
+      <span>um arquivo pessoal</span>
+    </a>
+    <a class="toplink" href="#fotografias">Ver fotografias <span aria-hidden="true">↘</span></a>
+  </header>
+
+  <main id="inicio">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> FOTOGRAFIAS &amp; LEMBRANÇAS</p>
+        <h1 id="page-title">Banco de<br><em>memórias.</em></h1>
+        <p class="intro-text">Um lugar para revisitar alguns momentos, encontros e pessoas que fizeram parte da minha caminhada.</p>
+        <a class="primary-link" href="#fotografias">Explorar o arquivo <span aria-hidden="true">↓</span></a>
+      </div>
+      <aside class="intro-note" aria-label="Sobre este arquivo">
+        <span class="note-index">01 / ARQUIVO</span>
+        <p>Algumas fotografias guardam mais do que um instante. Guardam pessoas, conversas, sorrisos e histórias que continuam fazendo parte de nós.</p>
+        <span class="note-signature">— Nickolas</span>
+      </aside>
+      <div class="intro-bottom">
+        <span>UM POUCO DA NOSSA HISTÓRIA</span>
+        <span class="photo-count"><strong id="photo-count">13</strong> fotografias</span>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="fotografias" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">RECORDAÇÕES</p>
+          <h2 id="gallery-title">Momentos que ficam.</h2>
+        </div>
+        <p class="section-hint">Toque em uma fotografia<br>para vê-la com mais detalhe.</p>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <button class="photo" type="button" data-index="0" aria-label="Abrir fotografia 1"><img src="assets/memoria-01.webp" alt="Registro de um encontro entre amigos em volta de uma mesa" loading="lazy"><span class="photo-number">01</span></button>
+        <button class="photo" type="button" data-index="1" aria-label="Abrir fotografia 2"><img src="assets/memoria-02.webp" alt="Registro de um encontro em grupo" loading="lazy"><span class="photo-number">02</span></button>
+        <button class="photo" type="button" data-index="2" aria-label="Abrir fotografia 3"><img src="assets/memoria-03.webp" alt="Fotografia de amigos ao ar livre" loading="lazy"><span class="photo-number">03</span></button>
+        <button class="photo" type="button" data-index="3" aria-label="Abrir fotografia 4"><img src="assets/memoria-04.webp" alt="Uma fotografia compartilhada com uma amiga" loading="lazy"><span class="photo-number">04</span></button>
+        <button class="photo" type="button" data-index="4" aria-label="Abrir fotografia 5"><img src="assets/memoria-05.webp" alt="Registro de um momento entre amigos" loading="lazy"><span class="photo-number">05</span></button>
+        <button class="photo" type="button" data-index="5" aria-label="Abrir fotografia 6"><img src="assets/memoria-06.webp" alt="Fotografia de dois amigos" loading="lazy"><span class="photo-number">06</span></button>
+        <button class="photo" type="button" data-index="6" aria-label="Abrir fotografia 7"><img src="assets/memoria-07.webp" alt="Fotografia de amigos em um encontro" loading="lazy"><span class="photo-number">07</span></button>
+        <button class="photo" type="button" data-index="7" aria-label="Abrir fotografia 8"><img src="assets/memoria-08.webp" alt="Registro de um passeio entre amigos" loading="lazy"><span class="photo-number">08</span></button>
+        <button class="photo" type="button" data-index="8" aria-label="Abrir fotografia 9"><img src="assets/memoria-09.webp" alt="Fotografia de um jantar entre amigos" loading="lazy"><span class="photo-number">09</span></button>
+        <button class="photo" type="button" data-index="9" aria-label="Abrir fotografia 10"><img src="assets/memoria-10.webp" alt="Registro de um encontro à mesa" loading="lazy"><span class="photo-number">10</span></button>
+        <button class="photo" type="button" data-index="10" aria-label="Abrir fotografia 11"><img src="assets/memoria-11.webp" alt="Fotografia de amigos em um momento descontraído" loading="lazy"><span class="photo-number">11</span></button>
+        <button class="photo" type="button" data-index="11" aria-label="Abrir fotografia 12"><img src="assets/memoria-12.webp" alt="Fotografia de dois amigos juntos" loading="lazy"><span class="photo-number">12</span></button>
+        <button class="photo" type="button" data-index="12" aria-label="Abrir fotografia 13"><img src="assets/memoria-13.webp" alt="Registro de um momento ao ar livre entre amigos" loading="lazy"><span class="photo-number">13</span></button>
+      </div>
+    </section>
+
+    <section class="closing" aria-label="Mensagem final">
+      <span class="closing-rule" aria-hidden="true"></span>
+      <p>Obrigado por fazerem parte dessas lembranças.</p>
+      <span class="closing-signature">Com carinho, Nickolas.</span>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>BANCO DE MEMÓRIAS</span>
+    <span>feito com carinho · <span id="year">2026</span></span>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Visualizador de fotografias">
+    <button class="lightbox-close" id="close-lightbox" type="button" aria-label="Fechar fotografia">×</button>
+    <button class="lightbox-nav lightbox-prev" id="prev-photo" type="button" aria-label="Fotografia anterior">‹</button>
+    <figure class="lightbox-figure">
+      <img id="lightbox-image" src="" alt="">
+      <figcaption><span id="lightbox-index">01 / 13</span><span>Banco de memórias — Nickolas</span></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" id="next-photo" type="button" aria-label="Próxima fotografia">›</button>
+  </dialog>
+</body>
+</html>

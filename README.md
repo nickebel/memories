@@ -1,9 +1,18 @@
 # Banco de memórias — Nickolas
 
-Um pequeno arquivo de fotografias, encontros e lembranças compartilhadas.
+Site estático com uma galeria de fotografias pessoais.
 
-## Publicação
+## Fotografias
 
-Este projeto é um site estático. Para publicar pelo GitHub Pages, acesse **Settings → Pages**, selecione **Deploy from a branch**, escolha `main` e `/ (root)`, e salve.
+O site carrega as imagens como arquivos independentes em `assets/` e referencia os arquivos PNG originais, sem redimensionamento nem recompressão.
 
-As imagens ficam em `assets/` e são servidas diretamente pelo site.
+Para adicionar as fotografias, extraia o pacote do projeto e envie a pasta `assets/` completa para a raiz deste repositório. Não converta as imagens para WebP nem substitua os PNGs por versões menores.
+
+## Publicar no GitHub Pages
+
+1. Envie todos os arquivos do pacote para a raiz do repositório, mantendo a pasta `assets/`.
+2. Abra **Settings → Pages**.
+3. Em **Build and deployment**, selecione **Deploy from a branch**.
+4. Escolha a branch `main` e a pasta `/ (root)`, depois salve.
+
+O endereço esperado será: https://nickebel.github.io/memories/
